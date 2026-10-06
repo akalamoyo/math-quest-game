@@ -1,32 +1,28 @@
 {
   "name": "math-quest-game",
-  "version": "1.0.0",
-  "description": "Interactive math learning game for children ages 5-8 with 10 progressive levels and leaderboard",
   "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy": "npm run build && firebase deploy"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "deploy": "npm run build && firebase deploy --only hosting"
   },
   "dependencies": {
-    "next": "^14.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "firebase": "^10.7.0",
-    "tailwindcss": "^3.3.0",
-    "framer-motion": "^10.16.4",
-    "react-confetti": "^6.1.0",
-    "zustand": "^4.4.0",
-    "axios": "^1.6.0"
+    "firebase": "^10.12.2",
+    "framer-motion": "^11.3.19",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "typescript": "^5.0.0",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24"
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.1"
   }
 }
